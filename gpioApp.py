@@ -5,12 +5,15 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(21, GPIO.OUT)
 GPIO.setup(20, GPIO.OUT)
 
-while True:
-    GPIO.output(21, False)
-    GPIO.output(20, True)
-    time.sleep(0.1)
-    GPIO.output(20, False)
-    GPIO.output(21, True)
-    time.sleep(0.1)
-
-GPIO.cleanup()
+try:
+    while True:
+        GPIO.output(21, False)
+        GPIO.output(20, True)
+        time.sleep(0.1)
+        GPIO.output(20, False)
+        GPIO.output(21, True)
+        time.sleep(0.1)
+except Exception as e:
+    print(e)
+finally:
+    GPIO.cleanup()
