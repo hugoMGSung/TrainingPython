@@ -8,7 +8,9 @@ GPIO.setup(20, GPIO.OUT)
 while True:
     GPIO.output(21, False)
     GPIO.output(20, True)
-    time.sleep(1)
+    time.sleep(0.1)
     GPIO.output(20, False)
     GPIO.output(21, True)
-    time.sleep(1)
+    time.sleep(0.1)
+
+GPIO.cleanup()
