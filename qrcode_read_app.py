@@ -1,5 +1,6 @@
 import pyzbar.pyzbar as pyzbar
 import cv2
+import time 
 
 cap = cv2.VideoCapture(0)
 
@@ -25,7 +26,7 @@ while(cap.isOpened()):
 
     text = '%s (%s)' % (barcode_data, barcode_type)
     print("{}".format(barcode_data))
-    cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
+    cv2.putText(img, text, (x, y), cv2.FONT_ITALIC, 1, (0, 255, 255), 2, cv2.LINE_AA)
 
   cv2.imshow('img', img)
 
