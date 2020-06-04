@@ -1,4 +1,9 @@
-# imports up here can be used to 
+'''
+판다스 예제 소스
+1. 필요라이브러리 설치
+pip install pandas
+
+'''
 import pandas as pd
 
 def azureml_main(dataframe1 = None, dataframe2 = None):
