@@ -1,3 +1,12 @@
+'''
+tkinter 기본GUI 소스
+라즈비안 python에 기본 설치되어 있으나 thread safe된(화면 멈추지 않는) 
+예제로 하고자 하면 아래의 라이브러리 설치
+
+1. threadsafe_tkinter 설치
+pip install threadsafe-tkinter
+
+'''
 from tkinter import *
 
 window = None
