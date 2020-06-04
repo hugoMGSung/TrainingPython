@@ -1,5 +1,10 @@
 #!/usr/bin/etc python
 
+'''
+자동차 번호판 인식 2
+오류 존재
+'''
+
 import cv2
 import numpy as np
 import pytesseract
