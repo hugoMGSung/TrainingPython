@@ -1,3 +1,8 @@
+'''
+Sqlite3 샘플소스
+1. 필요라이브러리 설치
+sudo apt-get install sqlite3 (이미 존재)
+'''
 from sys import argv
 import csv
 import sqlite3
