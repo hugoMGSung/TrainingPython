@@ -1,15 +1,16 @@
+''' 
+로또 번호 생성기
+for FUN
+'''
 # https://blockdmask.tistory.com/368
 import random
 
-
 class Lotto:
-    # 생성자
     def __init__(self):
         self.win = set()  # 6개의 당첨번호 (중복불가)
         self.bonus = set()  # 1개의 2등 번호
         self.myNum = set()  # 내가 입력한 번호
 
-    # 로또 숫자 초기화 함수
     def init(self):
         self.win.clear()  # set 초기화
         self.bonus.clear()  # set 초기화
@@ -75,12 +76,12 @@ lotto = Lotto()
 lotto.init()
 while True:
     print("===========================")
-    print("1. 이번주 로또 번호를 봅니다.")
-    print("2. 내 로또 번호를 입력합니다.")
-    print("3. 새로운 로또 번호를 받습니다.")
-    print("4. 이번주 번호와 내 로또번호를 확인합니다.")
-    print("5. 프로그램을 종료합니다.")
-    print("by. BlockDMask ============")
+    print("1. 이번주 로또 번호")
+    print("2. 내 로또 번호 입력")
+    print("3. 새로운 로또 번호 입력")
+    print("4. 이번주 번호와 내 로또번호를 확인")
+    print("5. 프로그램을 종료")
+    print("===========================")
     num = int(input())
     if num == 1:
         print("이번주 로또 번호를 봅니다...")
