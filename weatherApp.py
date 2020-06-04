@@ -1,3 +1,9 @@
+'''
+1. threadsafe_tkinter 설치
+pip install threadsafe-tkinter
+2. 나머지 작업은 tkinter와 동일
+'''
+
 from urllib.request import urlopen
 from threadsafe_tkinter import *
 
