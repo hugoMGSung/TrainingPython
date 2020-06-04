@@ -1,3 +1,15 @@
+'''
+자동차 표지판 인식 파이썬소스1
+필요 라이브러리
+1. OpenCV
+pip install opencv-python
+pip install opencv-contrib-python
+2. matplotlib, numpy(matplotlib 설치하면 자동 설치됨)
+pip install matplotlib
+3. PIL라이브러리 
+pip install pillow
+'''
+
 import numpy as np
 import cv2
 from copy import deepcopy
