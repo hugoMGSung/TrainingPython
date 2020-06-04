@@ -1,3 +1,13 @@
+'''
+QR코드 읽기 소스
+1. 필요라이브 설치
+pip install pyzbar
+pip install opencv-python
+pip install opencv-contrib-python
+2. 실행
+윈도우상에서 20여초 대기후 창 뜸
+3. QR generator에서 생성한 QR코드 카메라에서 확인
+'''
 import pyzbar.pyzbar as pyzbar
 import cv2
 import time
