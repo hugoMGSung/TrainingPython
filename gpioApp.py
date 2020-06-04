@@ -1,3 +1,7 @@
+'''
+라즈베리파이 GPIO 테스트 소스
+2색 LED 점멸 테스트
+'''
 import RPi.GPIO as GPIO
 import time
 
