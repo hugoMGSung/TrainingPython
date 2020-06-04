@@ -1,3 +1,8 @@
+'''
+PyQt5 예제 소스
+1. 필요라이브러리 설치
+pip install PyQt5 [--no-warn-script-location]
+'''
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QToolTip
 from PyQt5.QtCore import QCoreApplication
