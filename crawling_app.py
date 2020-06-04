@@ -1,3 +1,7 @@
+'''
+웹페이지 크롤링 파이선 소스
+디버깅하면서 HTML 소스 읽어봐야 함
+'''
 import requests
 from bs4 import BeautifulSoup
 
