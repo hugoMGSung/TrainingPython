@@ -1,3 +1,11 @@
+'''
+MySQL 처리
+1. 필요라이브러리 설치 아래 진행 오류나면 다른 라이브러리도 설치
+apt-get install python3-mysqldb
+apt-get install python3-dev
+apt-get install libmysqlclient-dev
+pip3 install MySQL-python3
+'''
 import MySQLdb
 
 db = MySQLdb.connect(host='210.119.12.52', \
