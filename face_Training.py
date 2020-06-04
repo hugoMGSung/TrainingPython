@@ -1,3 +1,7 @@
+'''
+얼굴인식 훈련 
+현재 윈도우에서 실행불가
+'''
 import cv2
 import numpy as np
 from PIL import Image
@@ -5,8 +9,8 @@ import os
 
 # Path for face image database
 path = 'dataset'
-recognizer = cv2.face.LBPHFaceRecognizer_create()
-detector = cv2.CascadeClassifier("haarcascades/haarcascade_frontalface_default.xml");
+recognizer = cv2.face. #CLBPHFaceRecognizer_create()  #create CLBPHFaceRecognizer_create()
+detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # function to get the images and label data
 def getImagesAndLabels(path):
