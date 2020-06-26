@@ -3,9 +3,9 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 
-RED = 23
+RED = 25
 GREEN = 24
-BLUE = 25
+BLUE = 23
 
 GPIO.setup(RED,GPIO.OUT)
 GPIO.output(RED,0)
@@ -21,12 +21,8 @@ try:
         GPIO.output(BLUE, 0)
         time.sleep(1)
         GPIO.output(RED, 0)
-        GPIO.output(GREEN, 255)
+        GPIO.output(GREEN, 0)
         GPIO.output(BLUE, 0)
         time.sleep(1)
-        GPIO.output(RED, 0)
-        GPIO.output(GREEN, 0)
-        GPIO.output(BLUE, 255)
-
 except KeyboardInterrupt:
     GPIO.cleanup()
