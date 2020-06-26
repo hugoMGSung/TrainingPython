@@ -1,9 +1,7 @@
 '''
 QR코드 읽기 소스
 1. 필요라이브 설치
-pip install pyzbar
-pip install opencv-python
-pip install opencv-contrib-python
+pip install opencv-python opencv-contrib-python pyzbar
 2. 실행
 윈도우상에서 20여초 대기후 창 뜸
 3. QR generator에서 생성한 QR코드 카메라에서 확인
@@ -47,7 +45,7 @@ while (cap.isOpened()):
     elif key == ord('s'):
         i += 1
         # print("{}".format(barcode_data))
-        cv2.imwrite('c_%03d.jpg' % i, img)
+        cv2.imwrite('D:\\c_%03d.jpg' % i, img)
 
 cap.release()
 cv2.destroyAllWindows()
