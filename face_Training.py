@@ -1,6 +1,8 @@
 '''
 얼굴인식 훈련 
 현재 윈도우에서 실행불가
+
+pip reinstall opencv-contrib-python
 '''
 import cv2
 import numpy as np
@@ -9,7 +11,7 @@ import os
 
 # Path for face image database
 path = 'dataset'
-recognizer = cv2.face. #CLBPHFaceRecognizer_create()  #create CLBPHFaceRecognizer_create()
+recognizer = cv2.face.CLBPHFaceRecognizer_create()  #create CLBPHFaceRecognizer_create()
 detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # function to get the images and label data
