@@ -15,8 +15,7 @@ try:
         else:
             print("Read error")
         
-        time.sleep(1)
-except KeyboardInterrupt:
+        time.sleep(1) 
     print("Terminated by Keyboard")
 
 finally:
