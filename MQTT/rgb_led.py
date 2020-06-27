@@ -3,9 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 
-RED = 25
-GREEN = 24
-BLUE = 23
+RED = 25; GREEN = 24; BLUE = 23
 
 GPIO.setup(RED,GPIO.OUT)
 GPIO.output(RED,0)
