@@ -13,14 +13,14 @@ def switch_on(pin):
 def switch_off(pin):
     GPIO.output(pin, GPIO.LOW)
 
-if __name__ == '__main__':
-    try:
-        switch_on(relay_pin)
-        time.sleep(10)
-        switch_off(relay_pin)
-        time.sleep(10)
-        
-    except KeyboardInterrupt as ex:
-        pass
-    finally:
-        GPIO.cleanup()
+#if __name__ == '__main__':
+try:
+    switch_on(relay_pin)
+    time.sleep(5)
+    switch_off(relay_pin)
+    time.sleep(5)
+    
+except KeyboardInterrupt as ex:
+    pass
+finally:
+    GPIO.cleanup()
