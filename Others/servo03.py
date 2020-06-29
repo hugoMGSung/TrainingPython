@@ -3,7 +3,7 @@ import time
 
 servoPin = 23
 SERVO_MAX_DUTY = 12 # 서보 최대180도 위치 주기
-SERVO_MIN_DUTY = 3  # 써뽀 최쏘0도 위치 쭈끼
+SERVO_MIN_DUTY = 3  # 서보 최소0도 위치 주기
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPin, GPIO.OUT)
