@@ -11,8 +11,8 @@ sensor = dht.DHT11; pin = 4; count = 0
 try:
     dev_id = "HUGO01"
     #mqtt publisher
-    broker_address = "192.168.200.102"
-    client2 = mqtt.Client("TempClient")
+    broker_address = "210.119.12.52"
+    client2 = mqtt.Client(dev_id)
     client2.connect(broker_address)
     #dh11 init
     while True:

@@ -20,9 +20,9 @@ def on_message(client, userdata, msg):
     json_data = json.loads(str(msg.payload.decode("utf-8")))
     dev_id = json_data["dev_id"]
     state = json_data["state"]
-    print(dev_id)
-    print(state)
     if dev_id == 'HUGO01':
+        print(dev_id)
+        print(state)
         process_alarm(state)
 
 def process_alarm(state):
@@ -56,8 +56,8 @@ try:
     client.on_subscribe = on_subscribe
     client.on_message = on_message
     # address : localhost, port: 1883 에 연결
-    client.connect('192.168.200.102', 1883)
-    # common topic 으로 메세지 발행
+    client.connect('210.119.12.52', 1883)
+    # common topic 으로 메세지 발
     client.subscribe('home/device/control/', 1)
     client.loop_forever()
 finally:

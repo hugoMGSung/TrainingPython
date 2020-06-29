@@ -12,7 +12,7 @@ p.start(0)
 if __name__ == '__main__':
     try:
         while True:
-            p.ChangeDutyCycle(0)
+            p.ChangeDutyCycle(3)
             time.sleep(10)
             p.ChangeDutyCycle(7.5)
             time.sleep(10)
