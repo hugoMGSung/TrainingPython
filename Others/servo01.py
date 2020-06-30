@@ -13,9 +13,9 @@ if __name__ == '__main__':
     try:
         while True:
             p.ChangeDutyCycle(3)
-            time.sleep(10)
+            time.sleep(5)
             p.ChangeDutyCycle(7.5)
-            time.sleep(10)
+            time.sleep(5)
     except KeyboardInterrupt:
         pass
     finally:

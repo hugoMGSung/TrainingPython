@@ -5,7 +5,7 @@ port = '/dev/ttyACM0'
 brate = 9600 #boudrate
 cmd = 'temp'
 
-servoPin = 23
+servoPin = 12
 SERVO_MAX_DUTY = 12 # 서보 최대180도 위치 주기
 SERVO_MIN_DUTY = 3  # 서보 최소0도 위치 주기
 

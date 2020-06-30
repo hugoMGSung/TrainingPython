@@ -12,8 +12,8 @@ m = GPIO.PWM(servoPin, 50)
 m.start(0)
 
 def setServoPos(degree):
-    if degree > 180:
-        degree = 180
+    # if degree > 180:
+    #     degree = 180
     
     duty = SERVO_MIN_DUTY+(degree*(SERVO_MAX_DUTY-SERVO_MIN_DUTY)/180.0)
     print('Degree {} to {}'.format(degree, duty))
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         while True:
             key = input('Enter L(eft), C(enter), R(right) : ')
             if key.upper() == 'L':
-                setServoPos(180)
+                setServoPos(270)
                 time.sleep(0.5)
             if key.upper() == 'C':
                 setServoPos(90)

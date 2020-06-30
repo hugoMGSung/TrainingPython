@@ -20,9 +20,14 @@ def setServoPos(degree):
     m.ChangeDutyCycle(duty)
 
 if __name__ == '__main__':
+    time.sleep(5)
     setServoPos(0)
     time.sleep(3)
+    setServoPos(45)
+    time.sleep(3)
     setServoPos(90)
+    time.sleep(3)
+    setServoPos(90+45)
     time.sleep(3)
     setServoPos(180)
     time.sleep(3)
