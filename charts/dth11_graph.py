@@ -32,5 +32,5 @@ def animate(i):
     print(new_y)
     return line,
 
-anim = animation.FuncAnimation(fig, animate, init_func=init, frames=200, interval=20, blit=False)
+anim = animation.FuncAnimation(fig, animate, init_func=init, frames=200, interval=10, blit=False)
 plt.show()

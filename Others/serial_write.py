@@ -1,4 +1,5 @@
 import serial
+import time
 
 port = '/dev/ttyACM0'
 brate = 9600 #boudrate
@@ -8,5 +9,7 @@ ser = serial.Serial(port, baudrate=brate, timeout=None)
 print(ser.name)
 
 while True:
-    key = input('Enter count : ')
-    ser.write(int(key))
+    ser.write(b'1')
+    time.sleep(2)
+    ser.write(b'2')
+    time.sleep(2)
