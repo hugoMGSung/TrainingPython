@@ -10,7 +10,8 @@ print(ser.name)
 while True:
     if ser.in_waiting != 0:
         content = ser.readline()
+        print(content)
         # print(content[:-2].decode())
-        content = content.decode('utf-8').replace('\r\n', '')
-        vals = content.split(':')
-        print(vals)
+        #content = content.decode('utf-8').replace('\r\n', '')
+        #vals = content.split(':')
+        #print(vals)
