@@ -1,23 +1,22 @@
 import time
 import grovepi
  
-buzzer = 12
- 
-grovepi.pinMode(buzzer,"OUTPUT")
+GPIO.setwarnings(False)
+buzzer = 12; GPIO.setmode(GPIO.BCM); GPIO.setup(buzzer, GPIO.OUT)
  
 while True:
     try:
         # Buzz for 1 second
-        grovepi.digitalWrite(buzzer,1)
+        GPIO.output(buzzer, GPIO.HIGH)
         print ('start')
         time.sleep(1)
         # Stop buzzing for 1 second and repeat
-        grovepi.digitalWrite(buzzer,0)
+        GPIO.output(buzzer, GPIO.LOW)
         print ('stop')
         time.sleep(1)
  
     except KeyboardInterrupt:
-        grovepi.digitalWrite(buzzer,0)
+        GPIO.output(buzzer, GPIO.LOW)
         break
     except IOError:
         print ("Error")
