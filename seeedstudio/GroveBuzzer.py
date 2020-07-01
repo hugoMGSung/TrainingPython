@@ -1,5 +1,5 @@
 import time
-import grovepi
+import RPi.GPIO as GPIO
  
 GPIO.setwarnings(False)
 buzzer = 12; GPIO.setmode(GPIO.BCM); GPIO.setup(buzzer, GPIO.OUT)
